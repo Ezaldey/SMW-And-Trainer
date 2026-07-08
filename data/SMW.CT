@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="26">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>192</ID>
+      <Description>"State"</Description>
+      <VariableType>Byte</VariableType>
+      <Address>snes9x.exe+5874AD</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>189</ID>
+      <Description>"Score"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>snes9x.exe+5883C8</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"Coins"</Description>
+      <VariableType>Byte</VariableType>
+      <Address>snes9x.exe+588253</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>200</ID>
+      <Description>"Lives"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>snes9x.exe+588248</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>170</ID>
+      <Description>"Yoshi Coins"</Description>
+      <VariableType>Byte</VariableType>
+      <Address>snes9x.exe+5888B6</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>190</ID>
+      <Description>"Yoshi"</Description>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>171</ID>
+          <Description>"Eaten Fruits By Yoshi"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>snes9x.exe+588D79</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>168</ID>
+          <Description>"IsRidingYoshi"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>0098755E</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>191</ID>
+      <Description>"Position"</Description>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>204</ID>
+          <Description>"position.x"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>00987525</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>166</ID>
+          <Description>"position.y"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>00987511</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>188</ID>
+      <Description>"Item Box"</Description>
+      <VariableType>Byte</VariableType>
+      <Address>snes9x.exe+588256</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>196</ID>
+      <Description Activated="1">"Time"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>009883C4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>199</ID>
+      <Description>"Switches"</Description>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>198</ID>
+          <Description>"Yellow Switch"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>snes9x.exe+5893BC</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>201</ID>
+          <Description>"Green Switch"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>snes9x.exe+5893BB</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>202</ID>
+          <Description>"Blue Switch"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>009893BD</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>203</ID>
+          <Description>"Red Switch"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>009893BE</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+  <Comments>State:
+0 = Small
+1 = Super/Big
+2 = Cape
+3 = Flower
+67 = Small Fire Mario
+Others are small mario with texture issues
+Item Box:
+0 = Empty
+1 = Mushroom
+2 = Flower
+3 = Star
+4 = Cape
+5 = 1-UP
+6 = Upwards Vine
+10 = P-Ballon
+11 = Red Coin ( 5 Coin )
+12 = Flying 1-UP
+13 = Flying Harmful Key(Jump on it to become normal key)
+14 = Random Item(Continuesly changing)
+16-17 = Flying Empty Kaizo(Left And Right)
+20 = Cloud
+62 = Unstoppable snake building
+70 = Radio
+83 = Lighten Entities
+85 = Red Kaizo
+92 = Bugs The Whole Program
+104 = Directly Damage urself
+118 = Scroll The Whole Level ( usually dying through this process )
+155 = Key Hole
+188 = Jumpad
+194 = Yoshi ( despawn him if hes already there )
+215 = Win Flag
+226 = Moving Platform Left And Right
+228 = Moving Platform Up And Down
+230 = Moving Platform Both Vectors
+236 = Moving Platform In Range
+247 = Coins Giving Cloud
+248-249 = Trampoline ( Left And Right )
+Others are non-static things which means it depeneds on the level which you will be on else the texture will change
+Position Explaination:
+Position is a 4 byte address which means it has limit of 4294967295, mario position tho can get further than that number, so the game handles that with cycling, which means when it reach the limit of the address it will return back to 0, so changing the address to that number isnt as useful, the way to move faster and make a use of the position address is to assign hotkeys to increase the position value, so when it reaches limit it keeps increasing visually in the game
+
+Time:
+151587093 is relevant to 999
+Lives:
+3014498 is relevant to 99
+Note:
+This apply to most SMW rom hacks
+</Comments>
+</CheatTable>
